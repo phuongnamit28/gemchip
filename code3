@@ -1,0 +1,10 @@
+echo "start" > file.txt
+git add .
+git commit -m "commit 1"
+
+for i in {2..10}
+do
+  echo "commit $i" >> file.txt
+  git add file.txt
+  git commit -m "commit $i"
+done
