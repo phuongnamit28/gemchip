@@ -1,0 +1,17 @@
+# Khởi tạo repo nếu chưa có
+git init
+
+# Tạo file chính
+FILE="history.txt"
+echo "Commit history" > $FILE
+
+# Cấu hình git (đảm bảo commit hiện trên GitHub)
+git config user.name "Your Name"
+git config user.email "your_email@gmail.com"
+
+# Commit đầu tiên
+git add $FILE
+git commit -m "Initial commit"
+
+# Tạo thêm 9 commit
+for
